@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "push-notification-dotnet": {
+      "hosting": {
+        "ng-push-notification": [
+          "push-notification-dotnet"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "push-notification-dotnet"
+  }
+}

@@ -101,6 +101,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "ng-push-notification:build:production",
+              "serveTarget": "ng-push-notification:serve:production"
+            },
+            "development": {
+              "buildTarget": "ng-push-notification:build:development",
+              "serveTarget": "ng-push-notification:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
